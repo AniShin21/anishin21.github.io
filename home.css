@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background: #f0f4f8;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Header */
+header {
+    background: #34495e; /* Darker blue-gray */
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+    font-size: 2.8em;
+    text-align: center;
+    color: #1abc9c; /* Teal */
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #ecf0f1; /* Light gray */
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #1abc9c; /* Teal */
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    background: linear-gradient(to bottom, rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.9)), url('images/hero-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ecf0f1;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-title {
+    font-size: 4em;
+    margin: 0;
+    animation: slideIn 2s ease-out;
+    color: #1abc9c; /* Teal */
+}
+
+.hero-subtitle {
+    font-size: 2em;
+    margin: 10px 0;
+    animation: slideIn 2s ease-out 0.5s;
+    color: #ecf0f1;
+}
+
+/* Buttons Section */
+.buttons {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.buttons a {
+    display: inline-block;
+    background: #1abc9c; /* Teal */
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.buttons a:hover {
+    background: #16a085; /* Darker teal */
+    transform: scale(1.05);
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2c3e50; /* Dark blue-gray */
+}
+
+.about p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background: #34495e; /* Darker blue-gray */
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
